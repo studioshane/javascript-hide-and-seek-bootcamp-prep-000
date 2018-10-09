@@ -15,8 +15,12 @@ function increaseRankBy(n) {
 }
 
 
-function deepestChild(){
-  
-}function deepestChild(){
-  
+function deepestChild() {
+  var lis=document.getElementById("grand-node").querySelectorAll("div");
+  var array=[];
+  for(let i=0;i<lis.length-1;i++) {
+    array.push(lis[i].querySelector("div"));
+  }
+return array[array.length-1].innerHTML;
 }
+
